@@ -1,0 +1,34 @@
+.dishes{
+    background: lighten($color: #000000, $amount: 20);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:80vh;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: orangered;
+    }
+
+    img{
+        width: 140px;
+        margin: 0px 15px;
+        padding: 10px;
+        border-radius: 6px;
+        font-size: 15px;
+        transition: all 0.3s ease;
+        border: 2px solid orange;
+
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.4);
+        }
+    }
+}

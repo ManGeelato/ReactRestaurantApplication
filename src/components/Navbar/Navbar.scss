@@ -1,0 +1,47 @@
+.navbar{
+    width: 100%;
+    height: 10vh;
+    background: black;
+    color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 1px solid whitesmoke;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 50;
+
+    &-heading{
+        h1{
+            margin-left: 20px;
+            font-size: 30px;
+            span{
+                color: orangered;
+            }
+        }
+    }
+    &-links{
+        ul{
+            display: flex;
+            list-style: none;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            margin: 0px 15px;
+            padding: 10px;
+            background: lighten($color: #000000, $amount: 20);
+            border-radius: 6px;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            border: 2px solid orange;
+
+            &:hover{
+                color:orange ;
+                background-color: orangered;
+            }
+        }
+    }
+}

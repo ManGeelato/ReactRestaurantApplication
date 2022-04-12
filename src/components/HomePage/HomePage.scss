@@ -1,0 +1,79 @@
+.home {
+    min-height: 100vh;
+    height: auto;
+    background: lighten($color: #000000, $amount: 15);
+    color: whitesmoke;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &-search{
+        margin-top: 10px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        input{
+            padding: 10px;
+            outline: none;
+            border: 2px solid orange;
+            width: 300px;
+            color: black;
+            font-size: 18px;
+            font-style: italic;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        button{
+            font-size: 18px;
+            border: 2px solid orange;
+            padding: 10px;
+            border-radius: 5px;
+            color: black;
+            margin-left: 15px;
+            outline: none;
+
+            &:hover{
+                cursor: pointer;
+                background: orangered;
+                color: orange;
+            }
+        }
+    }
+
+    &-view{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .home-meals{
+            text-align: center;
+            color: orangered;
+        }
+
+        h2{
+            color: orange;
+        }
+
+        img{
+            width: 250px;
+            border: 2px solid orange;
+            margin: 10px;
+            transition: all 0.2s ease;
+            border-radius: 10px;
+
+            &:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+    }
+
+   
+}  

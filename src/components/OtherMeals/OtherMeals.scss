@@ -1,0 +1,66 @@
+.otherMeals{
+    width:100%;
+    height: 100vh;
+    background: lighten($color: #000000, $amount: 15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        width: 200px;
+        border: 2px solid orange;
+        transition: all 0.3s ease;
+        margin: 0px 15px;
+        border-radius: 6px;
+
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+    }
+
+    &-view{
+        &-controls{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content:center;
+
+            p{
+                font-size:20px;
+                color: orangered ;
+            }
+
+            button{
+                color: whitesmoke;
+                text-decoration: none;
+                margin-top: 15px;
+                padding: 10px;
+                background: lighten($color: #000000, $amount: 20);
+                border-radius: 6px;
+                font-size: 20px;
+                transition: all 0.3s ease;
+                outline: none;
+                border: 2px solid orange;
+                
+                &:hover{
+                    background-color: orangered;
+                    cursor: pointer;
+                    color: orange
+                }
+            }
+        }
+
+        &-instructions{
+            text-align: center;
+            font-size: 30px;
+            color: orange;
+            padding: 15px;
+            p{
+                font-size: 18px;
+                color: orange;
+            }
+        }
+    }
+}
